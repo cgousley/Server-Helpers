@@ -1,0 +1,40 @@
+#Aliases and functions ssh
+
+ssh() {
+
+	if [[ $@ == alias1 ]]; then
+		command ssh [username1@ip.add.re.ss]
+    
+	elif [[ $@ == alias2 ]]; then
+		command ssh [username2@ip.add.re.ss]
+    
+	else
+		command ssh "$@"
+	fi
+
+}
+
+sftp() {
+
+	if [[ $@ == alias1 ]]; then
+		command sftp [username@ip.add.re.ss]
+    
+	elif [[ $@ == alias2 ]]; then
+		command sftp [username@ip.add.re.ss]
+    
+	else
+		command sftp "$@"
+	fi
+
+}
+
+ncftp() {
+
+	if [[ $@ == cgo ]]; then
+		command ncftp -u [USERNAME]-p [PASSWORD] [YOUR-DOMAIN.COM]
+
+	else
+		command ncftp "$@"
+	fi
+
+} 
