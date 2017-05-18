@@ -1,0 +1,7 @@
+#alias for ufw
+alias us='sudo ufw status'
+alias udel='sudo ufw delete'
+alias ua='sudo ufw allow'
+alias ur='sudo ufw reload'
+alias ue='sudo ufw enable'
+alias udis='sudo ufw disable'
