@@ -1,0 +1,14 @@
+#aliases for cd
+#alias .='cd .'
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../../'
+
+#alias for clear
+alias c='clear'
+
+#alias for cd (change directory) and ls (list dir contents) in one
+function cs () {
+  cd "$@" && ls
+}
