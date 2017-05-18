@@ -1,0 +1,5 @@
+#alias for forever
+alias fe='forever index.js'
+
+#alias for mongod with config options
+alias mongod='mongod --config /etc/mongod.conf'
